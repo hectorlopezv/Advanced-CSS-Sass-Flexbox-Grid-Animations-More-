@@ -47,7 +47,8 @@ D green #28b485
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -40%)
+    transform: translate(-50%, -40%);
+    text-align: center;
     /*
     shift elemtn -50 to left
     shift elemtn -50 to the top 
@@ -81,7 +82,82 @@ D green #28b485
     animation-duration: 2.5s;
     animation-timing-function: ease-in-out;
     margin-top: 20px;
+    
 }
+
+.header___btn:link,.header___btn:visited
+{
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-top: 50px;
+    display: inline-block;
+    padding: 15px 35px;
+    border-radius:900px;
+
+    font-size: 15.5px;
+    transform: translateX(-15px);
+    transition: all 0.5s;
+    position: relative;
+    
+    
+    
+}
+
+.header__btn--animatefadein
+{
+    animation: fadeInbtn 1.6s ease-in-out 0.75s;
+    animation-fill-mode: backwards;
+
+}
+.header___btn:hover 
+{
+    transform: translate(-15px ,-5px);
+    
+    box-shadow: 0 5px 40px 0px rgba(0, 0, 0,0.2);
+
+}
+.header___btn:active 
+{
+    transform: translate(-15px , 0px);
+    box-shadow: 0 2px 20px 0px rgba(0,0,0,0.2);
+
+
+}
+
+.header___btn--white
+{
+    background-color: #fff;
+    color: #777;
+   
+}
+.header___btn--white::after
+{
+    background-color: #fff;
+}
+
+.header___btn::after
+{
+    content:"";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 900px;
+    transition: all 0.5s;
+}
+
+
+.header___btn:hover::after
+{
+
+    transform: scaleX(1.2) scaleY(1.4);
+    opacity: 0;
+}
+
+
 @keyframes moveInleft
 {
     from 
@@ -124,6 +200,23 @@ D green #28b485
     {
         opacity: 1;
         transform: translateX(0);
+
+    }
+}
+
+@keyframes fadeInbtn
+{
+    from 
+    { 
+        opacity: 0;
+        transform: translate(-15px, 20px);
+    }
+
+
+    to
+    {
+        opacity: 1;
+        transform: translate(-15px, 0px);
 
     }
 }
