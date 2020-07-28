@@ -1,0 +1,30 @@
+
+/*pages*/
+@use 'pages/home';
+
+/*abtracts*/
+@use 'abstracts/functions';
+@use 'abstracts/mixins';
+@use 'abstracts/variables';
+
+
+/*base */
+@use 'base/base';
+@use 'base/animations';
+@use 'base/typography';
+@use 'base/utilities';
+
+
+/*components */
+@use 'components/button.scss';
+
+
+/*layout */
+@use 'layout/header';
+
+/*grid-layout*/
+@use 'layout/grid';
+
+
+
+

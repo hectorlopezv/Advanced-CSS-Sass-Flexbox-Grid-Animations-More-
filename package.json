@@ -1,0 +1,25 @@
+{
+  "name": "advanced-css-sass-flexbox-grid-animations-more-",
+  "version": "1.0.0",
+  "description": "landing page for natours",
+  "main": "index.js",
+  "scripts": {
+
+
+    "compile:sass": "node-sass sass/main.scss resources/css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hectorlopezv/Advanced-CSS-Sass-Flexbox-Grid-Animations-More-.git"
+  },
+  "author": "Hector lopez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hectorlopezv/Advanced-CSS-Sass-Flexbox-Grid-Animations-More-/issues"
+  },
+  "homepage": "https://github.com/hectorlopezv/Advanced-CSS-Sass-Flexbox-Grid-Animations-More-#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "node-sass": "^4.14.1"
+  }
+}

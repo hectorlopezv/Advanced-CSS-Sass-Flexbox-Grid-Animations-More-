@@ -1,0 +1,68 @@
+@use '../abstracts/variables';
+
+.header
+{
+    position: relative;
+    height: 95vh;
+    background-image: linear-gradient(to right bottom, rgba(variables.$color-primary-light,0.8),rgba(variables.$color-primary-light,0.8)), url(/resources/img/hero.jpg);
+    background-size: cover;
+    background-position: top;
+    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+    
+    &__logo
+    {
+        position: absolute;
+        top: 5rem;
+        left: 5rem;
+    }
+
+    &__img
+    {
+        height: 3.5rem;
+    }
+
+    &__textbox
+    {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -40%);
+        text-align: center;
+        /*
+        shift elemtn -50 to left
+        shift elemtn -50 to the top 
+        */
+    }
+
+    &__title
+    {
+        color: variables.$color-white;
+        text-transform: uppercase;
+        backface-visibility: hidden;
+    }
+
+    &__titlemain
+    {
+        display: block;
+        font-size: 6rem;
+        font-weight: 400;
+        letter-spacing: 3.5rem;
+        animation: moveInleft;
+        animation-duration: 2.5s;
+        animation-timing-function: ease-in-out;
+        /*animation-iteration-count: infinite;*/
+        /*animation-delay: 3s;*/
+    }
+
+    &__titlesub
+    {
+        display: block;
+        font-weight: 400;
+        font-size: 2.2rem;
+        letter-spacing: 1.5rem;
+        animation: moveInRight;
+        animation-duration: 2.5s;
+        animation-timing-function: ease-in-out;
+        margin-top: 2rem;
+    }
+}
