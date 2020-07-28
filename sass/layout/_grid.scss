@@ -5,7 +5,6 @@
 {
     width: variables.$grid-width;
     margin: 0 auto;
-    background-color: #eee;
 
     @include mixins.clearfix;
 
@@ -16,7 +15,6 @@
     
     [class^="col-"]
     {
-        background-color: red;
         float: left;
         &:not(:last-child)
         {
