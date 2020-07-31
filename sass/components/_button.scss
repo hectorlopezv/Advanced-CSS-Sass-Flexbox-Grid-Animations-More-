@@ -1,13 +1,17 @@
 
 @use '../abstracts/variables';
+
 .btn
 {
+    &{@extend %btn;}
     &:link{ @extend %btn;}
     &:visited{ @extend %btn;}  
+
+
     &:hover 
     {
-        transform: translate(-1.5rem ,-.5rem);
-        box-shadow: 0 .5rem 4rem 0rem rgba(variables.$color-black,0.2);
+        transform: translate(0rem, -.5rem);
+        box-shadow: 0 .5rem 4rem 0rem rgba(variables.$color-black, .2);
         &::after
         {    
             transform: scaleX(1.2) scaleY(1.4);
@@ -17,7 +21,7 @@
     
     &:active 
     {
-        transform: translate(0rem , 0px);
+        transform: translate(0rem , .5rem);
         box-shadow: 0 .2rem 2rem 0rem rgba(variables.$color-black,0.2);
     }
 
@@ -37,6 +41,7 @@
         &::after
         {
             background-color: variables.$color-primary-dark;
+            
         }
     }
 
@@ -57,13 +62,15 @@
         top: 0;
         left: 0;
         border-radius: 900px;
-        transition: all 0.5s;
+        transition: all 0.3s;
+        backface-visibility: hidden;
     }
 }
 
 
 %btn
 {
+    
     text-decoration: none;
     text-transform: uppercase;
     margin-top: 5rem;
@@ -73,9 +80,15 @@
     font-weight:400;
 
     font-size: 1.55rem;
-    transform: translateX(0rem);
+    //transform: translateX(0rem);
     transition: all 0.5s;
     position: relative;
+    backface-visibility: hidden;
+
+    ///for button element
+    border:none;
+    cursor:pointer;
+
 }
 
 .btn-text
