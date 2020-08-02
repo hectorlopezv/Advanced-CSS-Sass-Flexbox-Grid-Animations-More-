@@ -22,14 +22,13 @@
 @use 'components/card';
 @use 'components/story';
 @use 'components/bg-video';
-
+@use 'components/popup';
 @use 'components/form';
 
 /*layout */
 @use 'layout/header';
 @use 'layout/footer';
 @use 'layout/navigation';
-
 
 /*grid-layout*/
 @use 'layout/grid';
