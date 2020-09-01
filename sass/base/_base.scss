@@ -1,3 +1,4 @@
+@use '../abstracts/variables';
 
 * ,*::after, *::before
 {
@@ -12,4 +13,11 @@ html
 body
 {
     box-sizing: border-box;
+}
+
+
+::selection 
+{
+    background-color: variables.$color-primary;
+    color: variables.$color-white;
 }

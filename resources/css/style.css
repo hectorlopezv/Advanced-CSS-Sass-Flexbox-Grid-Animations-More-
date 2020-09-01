@@ -29,7 +29,7 @@
 .section-book {
   padding: 35rem 0;
   background-image: linear-gradient(to right bottom, #7ed56f, #28b485);
-  margin-top: -15rem;
+  margin-top: -10rem;
 }
 
 .book {
@@ -53,6 +53,11 @@ html {
 
 body {
   box-sizing: border-box;
+}
+
+::selection {
+  background-color: #55c57a;
+  color: #fff;
 }
 
 @keyframes moveInleft {
@@ -479,6 +484,13 @@ body {
   visibility: hidden;
   opacity: 0;
   transition: all 0.2s;
+}
+@supports (backdrop-filter: blur(10px)) and (-webkit-backdrop-filter: blur(10px)) {
+  .popup {
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    background-color: rgba(0, 0, 0, 0.3);
+  }
 }
 .popup__content {
   display: table;

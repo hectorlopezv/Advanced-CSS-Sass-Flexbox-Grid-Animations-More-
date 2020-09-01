@@ -52,38 +52,7 @@
 
     </header>
 
-    <!--
-    <section class="row-test">
 
-        <div class="row">
-            <div class="col-1-of-2">COL 1-OF-2</div>
-            <div class="col-1-of-2">COL 1-OF-2</div>
-        </div>
-
-        <div class="row">
-            <div class="col-1-of-3">COL 1-OF-3</div>
-            <div class="col-1-of-3">COL 1-OF-3</div>
-            <div class="col-1-of-3">COL 1-OF-3</div>
-        </div>
-
-        <div class="row">
-            <div class="col-1-of-3">COL 1-OF-3</div>
-            <div class="col-2-of-3">COL 2-OF-3</div>
-        </div>
-        
-        <div class="row">
-            <div class="col-1-of-4">COL 1-OF-4</div>
-            <div class="col-1-of-4">COL 1-OF-4</div>
-            <div class="col-1-of-4">COL 1-OF-4</div>
-            <div class="col-1-of-4">COL 1-OF-4</div>
-        </div>
-
-        <div class="row">
-            <div class="col-1-of-4">COL 1-OF-4</div>
-            <div class="col-3-of-4">COL 3-OF-4</div>
-        </div>
-    </section>
--->
     <main>
 
         <section class="section-about">
@@ -455,7 +424,16 @@
     </main>
     <footer class="footer">
         <div class="footer__logo-box">
-            <img src="/resources/img/logo-green-2x.png" alt="logo natours" class="footer__img">
+
+            <picture class="footer_logo">
+                <source srcset="/resources/img/logo-green-small-1x.png 1x, /resources/img/logo-green-2x.png 2x" 
+                media="(max-width: 37.5em)">
+                
+                <img srcset="/resources/img/logo-green-2x.png 1x, /resources/img/logo-green-2x.png 2x" 
+                alt="logo natours" class="footer__img">
+            
+            </picture>
+            
         </div>
 
         <div class="row">
